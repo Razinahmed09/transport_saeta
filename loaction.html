@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Locations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .Container-locations {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background: #FFEE02;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(255, 238, 2, 0.5);
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+            text-align: center;
+            border: 3px solid #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        .Container-locations::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 110%;
+            height: 110%;
+            border: 3px solid #ffffff;
+            animation: borderGlow 2s infinite linear;
+        }
+        .Container-locations h2 {
+            color: #000000;
+            font-size: 24px;
+        }
+        .loactio-sec{
+            display: flex;
+            justify-content: space-around;
+        }
+        .location-drives {
+            margin-top: 15px;
+            width: 42%;
+        }
+        .location-drives h3 {
+            color: #000000;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .location-drives ul {
+            list-style: none;
+            padding: 0;
+        }
+        .location-drives ul li {
+            background: #ffffff;
+            color: #000000;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out, background 0.3s ease;
+            position: relative;
+            z-index: 9999;
+        }
+        .location-drives ul li:hover {
+            background: #000000;
+            color: #ffffff;
+            transform: scale(1.05) rotate(3deg);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes borderGlow {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @media (max-width: 600px) {
+            .Container-locations {
+                padding: 15px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Container-locations">
+        <h2>Our Service Locations</h2>
+        <div class="loactio-sec" >
+            <div class="location-drives">
+                <h3>Virginia</h3>
+                <ul>
+                    <li>Falls Church</li>
+                    <li>Alexandria</li>
+                    <li>Arlington</li>
+                    <li>Springfield</li>
+                    <li>Tyson Corner</li>
+                    <li>Baylis Cross</li>
+                    <li>Annandale</li>
+                    <li>Fairfax</li>
+                </ul>
+            </div>
+            <div class="location-drives">
+                <h3>Maryland</h3>
+                <ul>
+                    <li>Langley Park</li>
+                    <li>Takoma Park</li>
+                    <li>Wheaton</li>
+                    <li>Silver Spring</li>
+                    <li>Greenbelt</li>
+                    <li>Adelphi</li>
+                    <li>Hyattsville</li>
+                    <li>College Park</li>
+                    <li>Landover</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
