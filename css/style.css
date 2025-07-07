@@ -155,6 +155,16 @@ p,
   line-height: var(--body-line-height);
 }
 
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important; 
+}
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
+    color: #ffffff !important;
+}
+
 /* -------- Headings ---------- */
 h1,
 h2,
@@ -662,7 +672,7 @@ Scroll To Top style
 .list-style-one li i {
   position: relative;
   color: var(--theme-color-dark);
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1em;
   margin-right: 5px;
   margin-top: -5px;
@@ -758,10 +768,31 @@ Scroll To Top style
 .translator_icons {
     display: flex;
     gap: 10px;
+        margin-top: 12px;
+}
+
+.goog-te-gadget-simple {
+  background-color: #141414 !important;
+   border: 0px  !important;
+}
+.goog-te-gadget-icon {
+  display: none !important;
+}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed img {
+  display: none;
+}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span:nth-of-type(2) {
+  display: none !important;
+}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span:nth-of-type(1) {
+      margin-top: -14px !important;
+}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span:nth-of-type(3) {
+      margin-top: -14px !important;
 }
 .translator_icons li a {
     align-items: center;
-    background: #252527;
+    /* background: #252527; */
     padding: 10px;
     font-size: 11px;
     color: #fff;
@@ -4913,19 +4944,24 @@ Main Header
   padding: 38px 20px 25px;
   max-width: 190px;
   position: absolute;
-  right: 9px;
-  top: 104px;
+  /* right: 9px;
+  top: 104px; */
+      right: -80px;
+    top: 55px;
 }
 @media (max-width: 1399.98px) {
   .banner-section-three .content-box .info-box {
-    right: 120px;
-    top: 0px;
+      right: -70px;
+      top: 30px;
+  }
+  .banner-section-three .social-icon-two {
+    right: 8px !important;
   }
 }
 @media (max-width: 1199.98px) {
   .banner-section-three .content-box .info-box {
-    right: 90px;
-    top: 60px;
+      right: -70px;
+      top: 30px;
   }
 }
 @media (max-width: 991.98px) {
@@ -4968,12 +5004,12 @@ Main Header
   }
 }
 .banner-section-three .content-box .banner-car1 {
-  background-image: url(../images/Taxi-images/FordExplorer.png);
+  background-image: url(../images/main-slider/ford_explorer.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 1187px;
-  height: 690px;
+  width: 100%;
+  height: 460px;
   margin-top: 102px;
   margin-left: -9px;
   position: relative;
@@ -4981,35 +5017,35 @@ Main Header
 
 .banner-section-three .content-box .banner-car02 {
   
-  background-image: url(../images/Taxi-images/toyotatacoma.png);
+  background-image: url(../images/main-slider/tacoma_white.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 1187px;
-  height: 690px;
+  width: 100%;
+  height: 460px;
   margin-top: 102px;
   margin-left: -9px;
   position: relative;
 }
 
 .banner-section-three .content-box .banner-car03 {
-  background-image: url(../images/Taxi-images/sedancar2.png);
+  background-image: url(../images/main-slider/sienna_white.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 1187px;
-  height: 690px;
+  width: 100%;
+  height: 460px;
   margin-top: 102px;
   margin-left: -9px;
   position: relative;
 }
 
-.banner-section-three .content-box .banner-car04 {
+/* .banner-section-three .content-box .banner-car04 {
   background-image: url(../images/Taxi-images/ToyotaSienna.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 1187px;
+    width: 100%;
   height: 690px;
   margin-top: 102px;
   margin-left: -9px;
@@ -5020,12 +5056,88 @@ Main Header
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 1187px;
+    width: 100%;
   height: 690px;
   margin-top: 102px;
   margin-left: -9px;
   position: relative;
+} */
+
+.desti_form_parent {
+  display: grid;
+  place-items: end;
 }
+
+.destination_form {
+          width: 80%;
+    background: #fafafa;
+    position: relative;
+    /* top: 0; */
+    /* right: 122px; */
+    z-index: 2;
+    padding: 40px;
+    border: 3px solid #ffee02;
+   background: linear-gradient(#ffffff, #e5e5e5) padding-box, linear-gradient(to right, #d1c100, #4e4805) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-top: 100px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+    /* bottom: 170px; */
+}
+
+
+ .banner-section-three input[type="text"], .banner-section-three input[type="datetime-local"] {
+  width: 100% ;
+    padding: 7px !important;
+    /* border: none !important; */
+    /* border-bottom: 2px solid #ffee02 !important; */
+    /* border-radius: 0px !important;  */
+    background: transparent !important;
+    color: #939191 !important;
+}
+.desti_form_parent .form-group label{
+      color: black !important;
+      font-size: 15px;
+}
+.banner-section-three .form-group {
+      margin-bottom: 15px;
+    }
+
+    .banner-section-three label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .banner-section-three input[type="text"],
+    .banner-section-three input[type="datetime-local"] {
+      width: 100%;
+      padding: 10px;
+      /* border: 1px solid #ccc; */
+      border: 2px solid #b5b5b5;
+      border-radius: 6px;
+    }
+
+    .banner-section-three button {
+      width: 100%;
+      padding: 6px;
+      background: #000000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+    }
+
+    .banner-section-three button:hover {
+      background: #c9c9c9;
+      color: #000000;
+    }
+    
+
 
 @media (max-width: 1199.98px) {
   .banner-section-three .content-box .banner-car1 {
@@ -5061,23 +5173,29 @@ Main Header
 }
 @media (max-width: 991.98px) {
   .banner-section-three .content-box .banner-car1 {
-    margin: 0 auto 0;
+      margin: 110px auto 0;
     height: 530px;
   }
+  .destination_form {
+        width: 95%;
+  }
+  .translator_icons {
+    margin-top: -1px;
+  }
   .banner-section-three .content-box .banner-car02 {
-    margin: 0 auto 0;
+      margin: 110px auto 0;
     height: 530px;
   }
   .banner-section-three .content-box .banner-car03 {
-    margin: 0 auto 0;
+      margin: 110px auto 0;
     height: 530px;
   }
   .banner-section-three .content-box .banner-car04 {
-    margin: 0 auto 0;
+      margin: 110px auto 0;
     height: 530px;
   }
   .banner-section-three .content-box .banner-car05 {
-    margin: 0 auto 0;
+      margin: 110px auto 0;
     height: 530px;
   }
 }
@@ -20692,7 +20810,7 @@ Sidebar
 }
 
 .main-menu .navigation > li {
-margin-right: 24px;
+    margin-right: 34px;
 }
 .counter-block-four .inner-box .content .counter-one {
   font-size: 42px;
@@ -20848,5 +20966,68 @@ margin-right: 24px;
 @media only screen and (max-width: 660px) {
   #write-whats {
     display: none !important;
+  }
+  .desti_form_parent {
+    display: grid;
+    place-items: center;
+}
+}
+
+
+@media only screen and (max-width: 991px) { 
+  .translator_icons_parent {
+    position: absolute;
+    right: 50px;
+    top: -24px;
+  }
+}
+
+@media only screen and (max-width: 476px) {  
+  .banner-section-three .content-box .banner-car1 {
+      margin: 0px auto 0;
+  }
+  
+  .banner-section-three .content-box .banner-car02 {
+      margin: 0px auto 0;
+  }
+  .banner-section-three .content-box .banner-car03 {
+      margin: 0px auto 0;
+  }
+  .banner-section-three .content-box .banner-car04 {
+      margin: 0px auto 0;
+  }
+  .banner-section-three .content-box .banner-car05 {
+      margin: 0px auto 0;
+  }
+  .desti_form_parent {
+    margin-bottom: 2rem;
+  }
+  .destination_form {
+    margin-top: 32px;
+  }
+}
+@media only screen and (max-width: 399px) {  
+  .translator_icons {
+    gap: 0px;
+  }
+  .translator_icons_parent {
+            right: 40px;
+        top: -26px;
+  }
+}
+
+@media only screen and (max-width: 360px) {   
+
+  .translator_icons li a {
+    font-size: 10px;
+  }
+  .translator_icons_parent {
+    right: 33px;
+  }
+  .logo-sizing {
+        width: 95px;
+  }
+  .goog-te-gadget-simple {
+    background-color: #14141400 !important;
   }
 }

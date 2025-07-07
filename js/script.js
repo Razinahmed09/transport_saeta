@@ -166,7 +166,7 @@ var THEMEMASCOT = {};
 			nav: false,
 			smartSpeed: 500,
 			autoHeight: true,
-			autoplay: true,
+			// autoplay: true,
 			autoplayTimeout: 10000,
 			navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
 			responsive: {
