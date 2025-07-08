@@ -1421,7 +1421,7 @@ Scroll To Top style
   }
 }
 /*==========================
-	Default Tabs
+G14	Default Tabs
 ===========================*/
 .default-tabs {
   position: relative;
@@ -2655,7 +2655,7 @@ Main Header
 .nav_span {
     padding-left: 5px;
     font-size: 13px;
-    color:rgb(204, 204, 204);
+    color: #979797;
 }
 .main-menu .navigation > li {
   position: relative;
@@ -4964,8 +4964,8 @@ Main Header
   position: absolute;
   /* right: 9px;
   top: 104px; */
-      right: -80px;
-    top: 55px;
+  right: 60px;
+  top: -50px;
 }
 @media (max-width: 1399.98px) {
   .banner-section-three .content-box .info-box {
@@ -4978,8 +4978,8 @@ Main Header
 }
 @media (max-width: 1199.98px) {
   .banner-section-three .content-box .info-box {
-      right: -70px;
-      top: 30px;
+      right: 15px;
+      top: -36px;
   }
 }
 @media (max-width: 991.98px) {
@@ -4987,6 +4987,9 @@ Main Header
     max-width: 160px;
     padding: 28px 10px 15px;
     right: 20px;
+  }
+  .banner-section-three .content-box .info-box {
+      top: 72px;
   }
 }
 @media (max-width: 767.98px) {
@@ -5022,38 +5025,38 @@ Main Header
   }
 }
 .banner-section-three .content-box .banner-car1 {
-  background-image: url(../images/main-slider/ford_explorer.png);
+  background-image: url(../images/main-slider/Ford\ Explorer\ side.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 460px;
-  margin-top: 102px;
+      height: 320px;
+    margin-top: 145px;
   margin-left: -9px;
   position: relative;
 }
 
 .banner-section-three .content-box .banner-car02 {
   
-  background-image: url(../images/main-slider/tacoma_white.png);
+  background-image: url(../images/main-slider/tacoma\ side.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 460px;
-  margin-top: 102px;
+      height: 320px;
+    margin-top: 145px;
   margin-left: -9px;
   position: relative;
 }
 
 .banner-section-three .content-box .banner-car03 {
-  background-image: url(../images/main-slider/sienna_white.png);
+  background-image: url(../images/main-slider/sienna\ side.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 460px;
-  margin-top: 102px;
+     height: 320px;
+    margin-top: 145px;
   margin-left: -9px;
   position: relative;
 }
@@ -6503,7 +6506,7 @@ Main Header
   clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
   position: absolute;
   top: 53px;
-  right: -18px;
+  right: -46px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   pointer-events: none;
@@ -14024,6 +14027,8 @@ Main Header
   padding: 77px 50px 0px 65px;
   margin-bottom: 70px;
   background-color: var(--theme-color-light);
+   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+
 }
 @media (max-width: 991.98px) {
   .booking-form {
@@ -20726,6 +20731,12 @@ Sidebar
   .footer-style-three .widgets-section .links-widget .user-links li i {
     margin-right: 3px;
   }
+  .content-box .container .row {
+    align-items: center;
+  }
+  .destination_form {
+    width: 90%;
+  }
 }
 .footer-style-three .widgets-section .gallery-widget {
   padding-top: 5px;
@@ -20736,6 +20747,9 @@ Sidebar
   .footer-style-three .widgets-section .gallery-widget {
     padding-left: 0;
     margin-right: 0;
+  }
+  .main-box .btn-style-one {
+    padding: 18px 50px 18px 18px;
   }
 }
 
@@ -21004,9 +21018,25 @@ Sidebar
   }
 }
 
+
+@media only screen and (max-width: 767px) { 
+  .content-box .container .row {
+    flex-direction: column-reverse;
+  }
+  .destination_form {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 476px) {  
   .banner-section-three .content-box .banner-car1 {
       margin: 0px auto 0;
+  }
+  .header-style-two {
+    overflow: hidden;
+  }
+  .footer-style-two .footer-bottom {
+    padding-bottom: 3rem;
   }
   .translator_icons_parent {
     right: 50px;

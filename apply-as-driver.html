@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from html.kodesolution.com/2024/citycar-html/page-booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 22:02:13 GMT -->
-  <head>
-    <meta charset="utf-8" />
-    <title>Transporte Saeta LLC</title>
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+<!-- Mirrored from html.kodesolution.com/2024/citycar-html/page-booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 22:02:13 GMT -->
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Transporte Saeta LLC</title>
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <!--[if lt IE 9
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <!--[if lt IE 9
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-  </head>
+  <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+<style>
+  .driver-steps {
+    /* background: #fff; */
+    padding: 30px;
+    border-radius: 12px;
+    /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.05); */
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+  }
 
-  <body>
-    <div class="page-wrapper">
-      <!-- Preloader -->
-      <div class="preloader"></div>
+  .driver-steps .step {
+    border-left: 4px solid #FFD600;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
 
-     <!-- Main Header-->
+  .driver-steps h3 {
+   color: #000000;
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .driver-steps ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style: disc;
+  }
+
+  .driver-steps p,
+  .driver-steps li {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+</style>
+
+<body>
+  <div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
     <header class="main-header header-style-two">
       <!-- Header Top -->
       <div class="header-top">
@@ -95,7 +128,7 @@
               <nav class="nav main-menu">
                 <ul class="navigation">
                   <li class="current">
-                    <a href="index.html">(24/7) <span class="nav_span"></span></a>
+                    <a href="index.html">Taxi Near Me <span class="nav_span">(24/7)</span></a>
                   </li>
 
                   <li class="dropdown">
@@ -106,12 +139,12 @@
                       <li><a href="#">Citas de inmigración</a></li>
                       <!-- <li><a href="#"></a></li> -->
                       <li class="dropdown"><a href="#">Servicios aeroportuarios</a>
-                      <ul>
-                        <li><a href="#">Economía</a></li>
-                        <li><a href="#">Lujo</a></li>
-                        <li><a href="#">grupo</a></li>
-                      </ul>
-                    </li>
+                        <ul>
+                          <li><a href="#">Economía</a></li>
+                          <li><a href="#">Lujo</a></li>
+                          <li><a href="#">grupo</a></li>
+                        </ul>
+                      </li>
                     </ul>
                     <!-- <ul>
                         <li><a href="#">Servicio 01</a></li>
@@ -119,10 +152,10 @@
                     </ul> -->
                   </li>
                   <li class="dropdown">
-                    <a href="Services.html">Sobre nosotras</a>
+                    <a href="#">Sobre nosotras</a>
                     <ul>
                       <li><a href="/our-company.html">Bienvenido a nuestra empresa</a></li>
-                      <li><a href="#">Políticas de privacidad</a></li>
+                      <li><a href="/privacy.html">Políticas de privacidad</a></li>
                       <li><a href="#">Paquetes?Alquiler</a></li>
                       <li><a href="#">Blogs/Artículos</a></li>
                     </ul>
@@ -131,11 +164,11 @@
                         <li><a href="#">Servicio 02</a></li>
                     </ul> -->
                   </li>
-                  <li><a href="texi24-7.html">Taxi24/7</a></li>
+                  <!-- <li><a href="texi24-7.html">Taxi24/7</a></li> -->
                   <!-- <li><a href="#">Sobre nosotras</a></li> -->
                   <!-- <li><a href="vehicle.html">vehículo</a></li> -->
                   <!-- <li><a href="privacy.html">Política de Privacidad</a></li> -->
-                  <li><a href="Contact-us.html">Contacto</a></li>
+                  <li><a href="Contact-us.html">Contacta con nosotras</a></li>
                 </ul>
               </nav>
             </div>
@@ -283,74 +316,124 @@
       </div>
       <!-- End Sticky Menu -->
     </header>
-    <!--End Main Header --
+    <!--End Main Header -->
 
-      <!-- Start main-content -->
-      <section
-        class="page-title"
-        style="background-image: url(images/Taxi-images/booking-image.jpg)"
-      >
-        <div class="auto-container">
-          <div class="title-outer text-center">
-            <h1 class="title">Aplicar como conductora</h1>
-            <ul class="page-breadcrumb">
-              <li><a href="#">Hogar</a></li>
-              <li>Aplicar como conductora</li>
+    <!-- Start main-content -->
+    <section class="page-title" style="background-image: url(images/Taxi-images/booking-image.jpg)">
+      <div class="auto-container">
+        <div class="title-outer text-center">
+          <h1 class="title">Aplicar como conductora</h1>
+          <ul class="page-breadcrumb">
+            <li><a href="#">Hogar</a></li>
+            <li>Aplicar como conductora</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end main-content -->
+
+    <!-- Booking Section -->
+    <section class="booking-section bg-light py-5">
+
+      <div class="container p-0">
+        <div class="driver-steps">
+          <div class="step">
+            <h3>1. Crea una Cuenta</h3>
+            <p>Regístrate con tu correo electrónico, número de teléfono y contraseña. Es posible que debas verificar tu
+              correo o número.</p>
+          </div>
+
+          <div class="step">
+            <h3>2. Envía tu Información Personal</h3>
+            <ul>
+              <li>Nombre completo</li>
+              <li>Fecha de nacimiento</li>
+              <li>Dirección</li>
+              <li>Número de seguridad social (en algunos países)</li>
+              <li>Número de licencia de conducir</li>
             </ul>
           </div>
-        </div>
-      </section>
-      <!-- end main-content -->
 
-      <!-- Booking Section -->
-      <section class="booking-section bg-light pt-120 pb-50 pb-md-70">
-        <div class="auto-container">
-          <!-- Booking Form -->
-          <div class="booking-form mx-auto pb-90">
-            <div class="sec-title">
-              <h2 class="letters-slide-up text-split">
-                Proceso de registro
-              </h2>
-              <div class="text">
-                Para obtener un viaje en tu taxi, selecciona una de las siguientes opciones:
-              </div>
+          <div class="step">
+            <h3>3. Sube Documentos Requeridos</h3>
+            <ul>
+              <li>Licencia de conducir válida</li>
+              <li>Registro del vehículo</li>
+              <li>Seguro del vehículo</li>
+              <li>Comprobante de identidad (pasaporte, ID, etc.)</li>
+              <li>Foto de perfil (sin lentes ni gorra)</li>
+            </ul>
+          </div>
+
+          <div class="step">
+            <h3>4. Revisión del Vehículo</h3>
+            <p>Proporciona datos como marca, modelo, año y matrícula. El vehículo debe cumplir con los requisitos
+              mínimos.</p>
+          </div>
+
+          <div class="step">
+            <h3>5. Acepta la Revisión de Antecedentes</h3>
+            <p>Debes aceptar una revisión de antecedentes penales y del historial de conducción.</p>
+          </div>
+
+          <div class="step">
+            <h3>6. Inspección del Vehículo (si aplica)</h3>
+            <p>Algunas regiones requieren una inspección de seguridad en un lugar oficial o con un mecánico certificado.
+            </p>
+          </div>
+
+          <div class="step">
+            <h3>7. Espera la Aprobación</h3>
+            <p>Una vez completado todo, recibirás una notificación por correo o app. Esto puede tardar unos días.</p>
+          </div>
+
+          <div class="step">
+            <h3>8. ¡Comienza a Conducir!</h3>
+            <p>Después de ser aprobado, podrás iniciar sesión en la app de conductor y aceptar viajes.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="auto-container">
+        <!-- Booking Form -->
+        <div class="booking-form mx-auto pb-90">
+          <div class="sec-title">
+            <h2 class="letters-slide-up text-split">
+              Proceso de registro
+            </h2>
+            <div class="text">
+              Para obtener un viaje en tu taxi, selecciona una de las siguientes opciones:
             </div>
-            <form method="get" action="#">
-              <div class="row">
-                <div class="form-group col-lg-12">
-                  <select class="custom-select">
-                    <option value="">Elija el tipo de taxi</option>
-                    <option value="">Hybrid Tax</option>
-                    <option value="">Town Taxi</option>
-                    <option value="">SUV Taxi</option>
-                    <option value="">Limousine Taxi</option>
-                  </select>
+          </div>
+          <form method="get" action="#">
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <select class="custom-select">
+                  <option value="">Elija el tipo de taxi</option>
+                  <option value="">Hybrid Tax</option>
+                  <option value="">Town Taxi</option>
+                  <option value="">SUV Taxi</option>
+                  <option value="">Limousine Taxi</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="input-outer">
+                  <input type="text" name="destination" placeholder="Nombre Completo" required />
+                  <!-- <i class="icon fal fa-map-marker-alt"></i> -->
                 </div>
-                <div class="form-group col-md-6">
-                  <div class="input-outer">
-                    <input
-                      type="text"
-                      name="destination"
-                      placeholder="Nombre Completo"
-                      required
-                    />
-                    <!-- <i class="icon fal fa-map-marker-alt"></i> -->
-                  </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="input-outer">
+                  <input type="email" name="destination" placeholder="Correo Electrónico" required />
+                  <i class="icon fa-solid fa-envelope"></i>
+                  <!-- <i class=" fal fa-map-marker-alt"></i> -->
                 </div>
-                <div class="form-group col-md-6">
-                  <div class="input-outer">
-                    <input
-                      type="email"
-                      name="destination"
-                      placeholder="Correo Electrónico"
-                      required
-                    />
-                    <i class="icon fa-solid fa-envelope"></i>
-                    <!-- <i class=" fal fa-map-marker-alt"></i> -->
-                  </div>
-                </div>
-                <!-- button Box -->
-                <!-- <div class="form-group col-lg-12">
+              </div>
+              <!-- button Box -->
+              <!-- <div class="form-group col-lg-12">
                   <div class="boxed-outer-box">
                     <div class="boxed">
                       <input
@@ -373,359 +456,303 @@
                     </div>
                   </div>
                 </div> -->
-                <div class="form-group col-md-6">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Número de Licencia"
-                    required
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="Años de Experiencia"
-                    required
-                  />
-                </div>
-                <div class="form-group col-lg-12">
-                  <div class="input-outer">
-                    <input
-                      type="text"
-                      name="destination"
-                      placeholder="Número de Teléfono"
-                      required
-                    />
-                    <i class="icon fal fa-mobile"></i>
-                  </div>
-                </div>
-                <div class="form-group col-lg-12">
-                  <select class="custom-select">
-                    <option value="">Tipo de Vehículo</option>
-                    <option value="">Carro</option>
-                    <option value="">Van</option>
-                    <!-- <option value="">Motocicleta</option> -->
-                    <!-- <option value="">Limousine Taxi</option> -->
-                  </select>
-                </div>
-                <div class="form-group col-lg-12">
-                  <button type="submit" class="theme-btn btn-style-one">
-                    <span class="btn-title">Enviar Solicitud </span>
-                  </button>
-                </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="name" placeholder="Número de Licencia" required />
               </div>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- End Booking Section -->
-
-       <!-- Main Footer -->
-      <footer class="main-footer footer-style-two">
-        <div class="bg bg-pattern-4"></div>
-        <!-- Parte Superior del Pie de Página -->
-        <div class="footer-top">
-          <div class="auto-container">
-            <div class="inner-container">
-              <div class="top-left">
-                <div class="logo-box">
-                  <div class="logo">
-                    <a href="#"
-                      ><img
-                        src="./images/Taxi-images/saeta-black-logo.gif"
-                        class="logo-sizing"
-                        alt="Logo"
-                    /></a>
-                  </div>
-                </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="email" placeholder="Años de Experiencia" required />
               </div>
-              <div class="top-center">
-                <div class="text">
-                  Transporte seguro, puntual y sin complicaciones a tu servicio.
-                  ¡Reserva ahora!
-                </div>
-              </div>
-              <div class="top-right">
-                <div class="info-btn">
+              <div class="form-group col-lg-12">
+                <div class="input-outer">
+                  <input type="text" name="destination" placeholder="Número de Teléfono" required />
                   <i class="icon fal fa-mobile"></i>
-                  <div class="content">
-                    <h5 class="title">Llama para Reservar</h5>
-                    <a href="#" class="phone-no">703-200-4522</a>
-                  </div>
+                </div>
+              </div>
+              <div class="form-group col-lg-12">
+                <select class="custom-select">
+                  <option value="">Tipo de Vehículo</option>
+                  <option value="">Carro</option>
+                  <option value="">Van</option>
+                  <!-- <option value="">Motocicleta</option> -->
+                  <!-- <option value="">Limousine Taxi</option> -->
+                </select>
+              </div>
+              <div class="form-group col-lg-12">
+                <button type="submit" class="theme-btn btn-style-one">
+                  <span class="btn-title">Enviar Solicitud </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Booking Section -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer footer-style-two">
+      <div class="bg bg-pattern-4"></div>
+      <!-- Parte Superior del Pie de Página -->
+      <div class="footer-top">
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="top-left">
+              <div class="logo-box">
+                <div class="logo">
+                  <a href="#"><img src="./images/Taxi-images/saeta-black-logo.gif" class="logo-sizing" alt="Logo" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="top-center">
+              <div class="text">
+                Transporte seguro, puntual y sin complicaciones a tu servicio.
+                ¡Reserva ahora!
+              </div>
+            </div>
+            <div class="top-right">
+              <div class="info-btn">
+                <i class="icon fal fa-mobile"></i>
+                <div class="content">
+                  <h5 class="title">Llama para Reservar</h5>
+                  <a href="#" class="phone-no">703-200-4522</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Sección de Widgets -->
-        <div class="widgets-section">
-          <div class="auto-container">
-            <div class="row">
-              <!-- Columna del Pie de Página -->
-              <div class="footer-column col-lg-4 col-md-6 col-sm-12">
-                <div class="footer-widget about-widget">
-                  <h5 class="widget-title">Descargar la Aplicación Móvil</h5>
-                  <div class="widget-content">
-                    <div class="text">
-                      Mejora y optimiza tus servicios de transporte con nuestra
-                      aplicación.
-                    </div>
-                    <div class="btn-box">
-                      <a href="#" class="image"
-                        ><img src="images/icons/google-play-2.png" alt="Imagen"
-                      /></a>
-                      <a href="#" class="image"
-                        ><img src="images/icons/app-store-2.png" alt="Imagen"
-                      /></a>
-                    </div>
+      <!-- Sección de Widgets -->
+      <div class="widgets-section">
+        <div class="auto-container">
+          <div class="row">
+            <!-- Columna del Pie de Página -->
+            <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-widget about-widget">
+                <h5 class="widget-title">Descargar la Aplicación Móvil</h5>
+                <div class="widget-content">
+                  <div class="text">
+                    Mejora y optimiza tus servicios de transporte con nuestra
+                    aplicación.
+                  </div>
+                  <div class="btn-box">
+                    <a href="#" class="image"><img src="images/icons/google-play-2.png" alt="Imagen" /></a>
+                    <a href="#" class="image"><img src="images/icons/app-store-2.png" alt="Imagen" /></a>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Columna del Pie de Página -->
-              <div class="footer-column col-lg-3 col-md-6 col-sm-12">
-                <div class="footer-widget links-widget">
-                  <h4 class="widget-title">Enlaces Útiles</h4>
-                  <div class="widget-content">
-                    <ul class="user-links two-column">
-                      <li>
-                        <i class="icon fa fa-angle-double-right"></i>
-                        <a href="index.html">Taxi para ti</a>
-                      </li>
-                      <li>
-                        <i class="icon fa fa-angle-double-right"></i>
-                        <a href="vehicle.html">Vehículos</a>
-                      </li>
-                      <li>
-                        <i class="icon fa fa-angle-double-right"></i>
-                        <a href="texi24-7.html">Taxi 24/7</a>
-                      </li>
-                      <!-- <li>
+            <!-- Columna del Pie de Página -->
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-widget links-widget">
+                <h4 class="widget-title">Enlaces Útiles</h4>
+                <div class="widget-content">
+                  <ul class="user-links two-column">
+                    <li>
+                      <i class="icon fa fa-angle-double-right"></i>
+                      <a href="index.html">Taxi para ti</a>
+                    </li>
+                    <li>
+                      <i class="icon fa fa-angle-double-right"></i>
+                      <a href="vehicle.html">Vehículos</a>
+                    </li>
+                    <li>
+                      <i class="icon fa fa-angle-double-right"></i>
+                      <a href="texi24-7.html">Taxi 24/7</a>
+                    </li>
+                    <!-- <li>
                         <i class="icon fa fa-angle-double-right"></i>
                         <a href="privacy.html">Política de Privacidad</a>
                       </li> -->
-                      <li>
-                        <i class="icon fa fa-angle-double-right"></i>
-                        <a href="Services.html">Servicios</a>
-                      </li>
-                      <li>
-                        <i class="icon fa fa-angle-double-right"></i>
-                        <a href="Contact-us.html">Contacto</a>
-                      </li>
-                      <li>
-                        <i class="icon fa fa-angle-double-right"></i>
-                        <a href="privacy.html">Política de Privacidad</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li>
+                      <i class="icon fa fa-angle-double-right"></i>
+                      <a href="Services.html">Servicios</a>
+                    </li>
+                    <li>
+                      <i class="icon fa fa-angle-double-right"></i>
+                      <a href="Contact-us.html">Contacto</a>
+                    </li>
+                    <li>
+                      <i class="icon fa fa-angle-double-right"></i>
+                      <a href="privacy.html">Política de Privacidad</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <!-- Columna del Pie de Página -->
-              <div class="footer-column col-lg-4 col-md-6 col-sm-12">
-                <div class="footer-widget newsletter-widget">
-                  <h4 class="widget-title">Boletín Informativo</h4>
-                  <div class="widget-content">
-                    <div class="text">
-                      Suscríbete a nuestro boletín semanal para recibir
-                      actualizaciones.
-                    </div>
-                    <div class="newsletter-form">
-                      <form method="post" action="#">
-                        <div class="form-group">
-                          <div class="input-outer">
-                            <input
-                              type="email"
-                              name="email"
-                              placeholder="Ingresa tu correo electrónico."
-                              required
-                            />
-                          </div>
-                          <button
-                            type="button"
-                            class="theme-btn btn-style-one dark-line-two hover-light"
-                          >
-                            <span class="btn-title">Suscribirse</span>
-                          </button>
+            <!-- Columna del Pie de Página -->
+            <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-widget newsletter-widget">
+                <h4 class="widget-title">Boletín Informativo</h4>
+                <div class="widget-content">
+                  <div class="text">
+                    Suscríbete a nuestro boletín semanal para recibir
+                    actualizaciones.
+                  </div>
+                  <div class="newsletter-form">
+                    <form method="post" action="#">
+                      <div class="form-group">
+                        <div class="input-outer">
+                          <input type="email" name="email" placeholder="Ingresa tu correo electrónico." required />
                         </div>
-                      </form>
-                    </div>
+                        <button type="button" class="theme-btn btn-style-one dark-line-two hover-light">
+                          <span class="btn-title">Suscribirse</span>
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Parte Inferior del Pie de Página -->
-        <div class="footer-bottom">
-          <div class="auto-container">
-            <div class="inner-container">
-              <div class="copyright-text">
-                © 2025 SEATA Todos los Derechos Reservados | Diseñado por
-                <a href="https://thevisionbrands.com/">Vision Brands</a>
-              </div>
-              <ul class="footer-nav">
-                <li>
-                  <a
-                    href="https://www.facebook.com/transportesaetallc?mibextid=wwXIfr&rdid=C3NiiC31QlI3dUHU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CJcecy9Cb%2F%3Fmibextid%3DwwXIfr#"
-                    ><i class="fab fa-facebook"></i> Facebook</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/@transportesaetallc1718"
-                    ><i class="fa-brands fa-youtube"></i> YouTube</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/transsaetava/?igsh=MWtpOG9laHQxajFucg%3D%3D&utm_source=qr#"
-                    ><i class="fab fa-instagram"></i>Instagram</a
-                  >
-                </li>
-              </ul>
+      <!-- Parte Inferior del Pie de Página -->
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="copyright-text">
+              © 2025 SEATA Todos los Derechos Reservados | Diseñado por
+              <a href="https://thevisionbrands.com/">Vision Brands</a>
             </div>
+            <ul class="footer-nav">
+              <li>
+                <a
+                  href="https://www.facebook.com/transportesaetallc?mibextid=wwXIfr&rdid=C3NiiC31QlI3dUHU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CJcecy9Cb%2F%3Fmibextid%3DwwXIfr#"><i
+                    class="fab fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@transportesaetallc1718"><i class="fa-brands fa-youtube"></i>
+                  YouTube</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/transsaetava/?igsh=MWtpOG9laHQxajFucg%3D%3D&utm_source=qr#"><i
+                    class="fab fa-instagram"></i>Instagram</a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- --------------mob-nav-------------------------- -->
-        <div class="mobile-nav2">
-          <ul class="mobile-nav2-ul">
-            <!-- item 7 -->
-            <li class="relative group li-icon">
-              <a
-                href="https://www.google.com/maps/place/3417+Glen+Carlyn+Dr+%2310,+Bailey's+Crossroads,+VA+22041,+USA/@38.8508891,-77.141961,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7b3841b22c795:0x61693341ae7d9113!8m2!3d38.8508891!4d-77.141961!16s%2Fg%2F11s_ssb_95?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"
-                ><i class="fa-solid fa-location-dot"></i> Location</a
-              >
-            </li>
-
-            <!-- item 4 -->
-            <li class="relative group li-icon">
-              <a
-                href="#"
-                class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"
-                ><i class="fa-regular fa-comments"></i> Live Chat</a
-              >
-            </li>
-
-            <!-- item 6 -->
-            <li class="relative group li-icon">
-              <a
-                href="https://wa.me/7032004522"
-                target="_blank"
-                class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex whtsp"
-                ><img
-                  class="whatsApp-logo"
-                  src="./images/Taxi-images/marrii-whatsapp.png"
-                  alt=""
-                  width="50px"
-                />
-                Ask US</a
-              >
-            </li>
-
-            <!-- item 8 -->
-            <li class="relative group li-icon">
-              <a
-                href="tel:7032004522"
-                class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"
-                ><i class="fa-solid fa-phone-volume"></i> Call</a
-              >
-            </li>
-
-            <!-- item 5 -->
-            <li class="relative group li-icon">
-              <a
-                href="book-taxi.html"
-                class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"
-                ><i class="fa-regular fa-address-book"></i> Book Now</a
-              >
-            </li>
-          </ul>
-        </div>
-      </footer>
-      <!--End Main Footer -->
-    </div>
-    <!-- End Page Wrapper -->
-    <!-- Scroll To Top -->
-    <div class="scroll-to-top scroll-to-target" data-target="html">
-      <span class="fa fa-angle-up"></span>
-    </div>
-
-    <a href="https://wa.me/703- 200-4522" target="_blank">
-      <div class="scroll-to-top scroll-to-target" id="write-whats">
-        <img
-          src="./images/Taxi-images/marrii-whatsapp.png"
-          alt="WhatsApp Icon"
-        />
       </div>
-    </a>
 
-    <script
-      data-cfasync="false"
-      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/gsap.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script src="js/splitType.js"></script>
-    <script src="js/select2.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/script.js"></script>
-    <!-- form submit -->
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.form.min.js"></script>
-    <script>
-      (function ($) {
-        $('#contact_form').validate({
-          submitHandler: function (form) {
-            var form_btn = $(form).find('button[type="submit"]');
-            var form_result_div = '#form-result';
-            $(form_result_div).remove();
-            form_btn.before(
-              '<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'
-            );
-            var form_btn_old_msg = form_btn.html();
-            form_btn.html(form_btn.prop('disabled', true).data('loading-text'));
-            $(form).ajaxSubmit({
-              dataType: 'json',
-              success: function (data) {
-                if (data.status == 'true') {
-                  $(form).find('.form-control').val('');
-                }
-                form_btn.prop('disabled', false).html(form_btn_old_msg);
-                $(form_result_div).html(data.message).fadeIn('slow');
-                setTimeout(function () {
-                  $(form_result_div).fadeOut('slow');
-                }, 6000);
-              },
-            });
-          },
-        });
-      })(jQuery);
-    </script>
-    <script type="text/javascript">
-     function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'es', // Your default site language is Spanish
-      includedLanguages: 'es,en', // Only show Spanish and English
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      autoDisplay: false
-    }, 'google_translate_element');
-  }
-    </script>
+      <!-- --------------mob-nav-------------------------- -->
+      <div class="mobile-nav2">
+        <ul class="mobile-nav2-ul">
+          <!-- item 7 -->
+          <li class="relative group li-icon">
+            <a href="https://www.google.com/maps/place/3417+Glen+Carlyn+Dr+%2310,+Bailey's+Crossroads,+VA+22041,+USA/@38.8508891,-77.141961,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7b3841b22c795:0x61693341ae7d9113!8m2!3d38.8508891!4d-77.141961!16s%2Fg%2F11s_ssb_95?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"><i
+                class="fa-solid fa-location-dot"></i> Location</a>
+          </li>
 
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </body>
+          <!-- item 4 -->
+          <li class="relative group li-icon">
+            <a href="#"
+              class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"><i
+                class="fa-regular fa-comments"></i> Live Chat</a>
+          </li>
 
-  <!-- Mirrored from html.kodesolution.com/2024/citycar-html/page-booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 22:02:13 GMT -->
+          <!-- item 6 -->
+          <li class="relative group li-icon">
+            <a href="https://wa.me/7032004522" target="_blank"
+              class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex whtsp"><img
+                class="whatsApp-logo" src="./images/Taxi-images/marrii-whatsapp.png" alt="" width="50px" />
+              Ask US</a>
+          </li>
+
+          <!-- item 8 -->
+          <li class="relative group li-icon">
+            <a href="tel:7032004522"
+              class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"><i
+                class="fa-solid fa-phone-volume"></i> Call</a>
+          </li>
+
+          <!-- item 5 -->
+          <li class="relative group li-icon">
+            <a href="book-taxi.html"
+              class="text-lg xl:text-15px 2xl:text-lg hover:text-secondary-color font-semibold whitespace-nowrap d-flex"><i
+                class="fa-regular fa-address-book"></i> Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!--End Main Footer -->
+  </div>
+  <!-- End Page Wrapper -->
+  <!-- Scroll To Top -->
+  <div class="scroll-to-top scroll-to-target" data-target="html">
+    <span class="fa fa-angle-up"></span>
+  </div>
+
+  <a href="https://wa.me/703- 200-4522" target="_blank">
+    <div class="scroll-to-top scroll-to-target" id="write-whats">
+      <img src="./images/Taxi-images/marrii-whatsapp.png" alt="WhatsApp Icon" />
+    </div>
+  </a>
+
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/splitType.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/script.js"></script>
+  <!-- form submit -->
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.form.min.js"></script>
+  <script>
+    (function ($) {
+      $('#contact_form').validate({
+        submitHandler: function (form) {
+          var form_btn = $(form).find('button[type="submit"]');
+          var form_result_div = '#form-result';
+          $(form_result_div).remove();
+          form_btn.before(
+            '<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'
+          );
+          var form_btn_old_msg = form_btn.html();
+          form_btn.html(form_btn.prop('disabled', true).data('loading-text'));
+          $(form).ajaxSubmit({
+            dataType: 'json',
+            success: function (data) {
+              if (data.status == 'true') {
+                $(form).find('.form-control').val('');
+              }
+              form_btn.prop('disabled', false).html(form_btn_old_msg);
+              $(form_result_div).html(data.message).fadeIn('slow');
+              setTimeout(function () {
+                $(form_result_div).fadeOut('slow');
+              }, 6000);
+            },
+          });
+        },
+      });
+    })(jQuery);
+  </script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'es', // Your default site language is Spanish
+        includedLanguages: 'es,en', // Only show Spanish and English
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+<!-- Mirrored from html.kodesolution.com/2024/citycar-html/page-booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 22:02:13 GMT -->
+
 </html>
